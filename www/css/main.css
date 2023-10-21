@@ -83,3 +83,61 @@ div,li {
   width: 20%;
   border-radius: 50%;
 }
+.mv_title {
+  position: absolute;
+  top: 6.5%;
+}
+.flex-box {
+  display: flex;
+  flex-wrap: wrap; /* 折返し指定 */
+  justify-content: space-between;
+}
+.flex-item1 {
+  flex-basis: 60%; /* p */
+}
+.flex-item2 {
+  flex-basis: 35%; /* img */
+}
+.flex-item3{
+  width: 49%;
+  background: #FFF;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,.2);
+}
+.menu {
+  background: center / cover fixed no-repeat url(../images/sample_menu_bg.jpg)
+}
+.rec-menu_img{
+  display: list-item;
+  flex-basis: 90%;
+  object-fit: cover;
+}
+.menu_wrapper{
+  padding: 15px;
+  display: list-item;
+}
+.menu_text{
+  font-size: 1.1rem;
+  line-height: 1.7;
+  padding-bottom: 70px;
+}
+.menu_sub_title{
+  font-size: 1.6rem;
+  font-family: 'Noto Serif JP', serif;
+  padding: 20px 0 50px 0;
+}
+.menu_price{
+  text-align: right;
+}
+.rec-menu_contens {
+  display: flex;
+  height: 350px;
+  flex-direction: row-reverse;
+}
+.flex-item4 {
+	width: calc(49% - 40px);
+}
+.cof-menu_contens{
+  padding: 20px;
+  background: #FFF;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,.2);
+}
