@@ -98,46 +98,116 @@ div,li {
 .flex-item2 {
   flex-basis: 35%; /* img */
 }
-.flex-item3{
-  width: 49%;
-  background: #FFF;
-  box-shadow: 0 3px 3px 0 rgba(0,0,0,.2);
-}
 .menu {
-  background: center / cover fixed no-repeat url(../images/sample_menu_bg.jpg)
+  background: url(../images/sample_menu_bg.jpg) no-repeat bottom;
+  background-size: 100%;
+    background-attachment: fixed;
 }
+.menu_sub_title{
+  font-size: 1.4rem;
+  font-family: 'Noto Serif JP', serif;
+}
+/* recomended menu*/
 .rec-menu_img{
   display: list-item;
-  flex-basis: 90%;
+  width: 55%;
   object-fit: cover;
 }
-.menu_wrapper{
+.rec-menu_wrapper{
   padding: 15px;
-  display: list-item;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .menu_text{
   font-size: 1.1rem;
   line-height: 1.7;
-  padding-bottom: 70px;
-}
-.menu_sub_title{
-  font-size: 1.6rem;
-  font-family: 'Noto Serif JP', serif;
-  padding: 20px 0 50px 0;
 }
 .menu_price{
   text-align: right;
 }
+.rec-menu_list{
+  padding-bottom: 50px;
+}
 .rec-menu_contens {
   display: flex;
   height: 350px;
+  width: 49%;
   flex-direction: row-reverse;
+  background: #FFF;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,.2);
 }
-.flex-item4 {
-	width: calc(49% - 40px);
-}
-.cof-menu_contens{
+/* coffee menu*/
+.cof-menu_list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding: 20px;
   background: #FFF;
   box-shadow: 0 3px 3px 0 rgba(0,0,0,.2);
+}
+.cof-menu_contens {
+  width: 49%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 10px;
+}
+.cof-menu_wrapper{
+  width: 80%;
+  padding: 10px;
+}
+.cof-menu_img{
+  width: 20%;
+  border-radius: 50%;
+}
+.menu_text{
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+/* access */
+.access_info {
+  display: flex;
+}
+.access_title{
+  width: 80px;
+}
+.map_area {
+  width: 100%;
+}
+.map{
+  width: 100%;
+  height: 500px;
+}
+/* footer */
+.footer {
+  width: 100%;
+  background: #251e19;
+  padding-bottom: 10px;
+  height: 75px;
+  position: absolute;
+  bottom: -75px;
+}
+.footer_nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.footer_nav_item {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+.footer_logo {
+  width: 80px;
+}
+.footer_copy{
+  color: white;
+  text-align: center;
+  font-size: 10px;
 }
